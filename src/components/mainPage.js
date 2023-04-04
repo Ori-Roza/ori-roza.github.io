@@ -77,7 +77,7 @@ class MainPageComponent extends React.Component {
                     </IconButton>
                     <IconButton style={{color: "#1b5e20"}} target="_blank" rel="noopener noreferrer" href="https://medium.com/@ori75660">
                     <Icon>
-                        <img src={MediumSVG} height={25} width={25}/>
+                        <img alt="" src={MediumSVG} height={25} width={25}/>
                     </Icon>
                     </IconButton>
 
