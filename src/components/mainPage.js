@@ -30,7 +30,7 @@ class MainPageComponent extends React.Component {
             direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={1}
+            spacing={0.75}
             >
                 <Item style={{width: "100%", paddingTop: "2%"}}>
                     <Box
@@ -46,9 +46,9 @@ class MainPageComponent extends React.Component {
                 <Item>
                     <h1>Hi! I'm <b>Ori Roza</b> → DaPythonista!</h1><br></br>
                 </Item>
-                <Item sx={{ maxWidth: 400 }}>
+                <Item sx={{ maxWidth: 450 }}>
                 <Typography>
-                    <Box sx={{ textAlign: 'center', m: 1 }}>I'm a software engineer from Tel Aviv.</Box>
+                    <Box sx={{ textAlign: 'center', m: 1 }}>I'm a software engineer from Tel Aviv, currently <a target="_blank" rel="noopener noreferrer" href="https://www.bluevine.com/" >@BlueVine</a></Box>
                 </Typography>
                 <Typography
                    component="p"
@@ -57,7 +57,10 @@ class MainPageComponent extends React.Component {
                     whiteSpace: 'pre-line',
                  }}
                 >
-                <Box sx={{ textAlign: 'center' }}>I've been expriencing with research, web development and architecture using Python, JS (React and vanilla), C, C++, JAVA in multiple systems such as Windows, Linux, Android and IOS.</Box>
+                <Box sx={{ textAlign: 'center' }}>I've been expriencing with security-research, web development, ML, and architecture using Python, JS (React and vanilla), C, C++, JAVA in multiple systems such as Windows, Linux, Android and IOS.</Box>
+                <br></br>
+                <Box sx={{ textAlign: 'center' }}>Flask • FastAPI • Django • SQLAlchemy • Pandas • Scipy • Sklearn • Pytorch</Box>
+
                 </Typography>
                 </Item>
                 <Item>
