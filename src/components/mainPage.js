@@ -15,11 +15,10 @@ import MediumSVG from './static/medium.svg'
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
-    padding: theme.spacing(1),
     backgroundColor: 'transparent',
     color: "#1b5e20",
     boxShadow: 'none',
-    border: 0
+    border: 0,
   }));
 
 class MainPageComponent extends React.Component {
@@ -29,21 +28,19 @@ class MainPageComponent extends React.Component {
             direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={0.75}
+            spacing={0.1}
             >
-                <Item style={{width: "100%", paddingTop: "2%", textAlign: 'center'}}>
+                <Item style={{width: "100%", padding: "1%", textAlign: 'center'}}>
                     <Box
                         component="img"
                         sx={{
                             width: "320px",
-                            height: "380px",
+                            height: "360px",
                             borderRadius: "50%",
                         }}
                         src={profile}
                     />
-                </Item>
-                <Item>
-                    <h1>Hi! I'm <b>Ori Roza</b> → DaPythonista!</h1><br></br>
+                     <h1>Hi! I'm <b>Ori Roza</b> → DaPythonista!</h1><br></br>
                 </Item>
                 <Item sx={{ maxWidth: 600 }}>
                 <Typography
@@ -55,9 +52,12 @@ class MainPageComponent extends React.Component {
                     whiteSpace: 'pre-line',
                     
                  }}
-                 style={{ paddingLeft: '16%' }}
+                 style={{ 
+                    paddingLeft: '16%',
+                    fontSize: "16px"
+                }}
                 >
-                    I'm a software engineer from Tel Aviv, currently <a target="_blank" rel="noopener noreferrer" href="https://www.bluevine.com/" >@BlueVine</a>
+                    I'm a senior software engineer from Tel Aviv, currently <a target="_blank" rel="noopener noreferrer" href="https://www.bluevine.com/" >@BlueVine</a>
                 </Typography>
                 <Typography
                     inline
@@ -67,8 +67,10 @@ class MainPageComponent extends React.Component {
                    sx={{
                     whiteSpace: 'pre-line',
                  }}
-                 style={{ paddingLeft: '16%' }}
-
+                 style={{ 
+                    paddingLeft: '16%',
+                    fontSize: "16px"
+                }}
                 >
                 I've been expriencing with security-research, web development, ML, and architecture using Python, JS (React and vanilla), C, C++, JAVA in multiple systems such as Windows, Linux, Android and IOS.
                 </Typography>
@@ -81,8 +83,10 @@ class MainPageComponent extends React.Component {
                    sx={{
                     whiteSpace: 'pre-line',
                  }}
-                 style={{ paddingLeft: '16%' }}
-
+                 style={{ 
+                    paddingLeft: '16%',
+                    fontSize: "16px"
+                }}
                 >
                     Flask • FastAPI • Django • SQLAlchemy • Pandas • Scipy • Sklearn • Pytorch
                 </Typography>
