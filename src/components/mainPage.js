@@ -40,7 +40,7 @@ class MainPageComponent extends React.Component {
                         }}
                         src={profile}
                     />
-                     <h1>Hi! I'm <b>Ori Roza</b> → DaPythonista!</h1><br></br>
+                     <h1>Hi! I'm <b>Ori Roza</b></h1><br></br>
                 </Item>
                 <Item sx={{ maxWidth: 600 }}>
                 <Typography
