@@ -13,10 +13,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import MediumSVG from './static/medium.svg'
 
+const BASE_COLOR = "#2B5E1B";
+
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     backgroundColor: 'transparent',
-    color: "#1b5e20",
+    color: BASE_COLOR,
     boxShadow: 'none',
     border: 0,
   }));
@@ -28,14 +30,14 @@ class MainPageComponent extends React.Component {
             direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={0.1}
+            spacing={2}
             >
                 <Item style={{width: "100%", padding: "1%", textAlign: 'center'}}>
                     <Box
                         component="img"
                         sx={{
-                            width: "320px",
-                            height: "360px",
+                            width: "260px",
+                            height: "260px",
                             borderRadius: "50%",
                         }}
                         src={profile}
@@ -44,7 +46,6 @@ class MainPageComponent extends React.Component {
                 </Item>
                 <Item sx={{ maxWidth: 600 }}>
                 <Typography
-                    inline
                     variant="body2"
                    component="p"
                    paragraph={true}
@@ -60,7 +61,6 @@ class MainPageComponent extends React.Component {
                     I'm a senior software engineer from Tel Aviv, currently <a target="_blank" rel="noopener noreferrer" href="https://www.bluevine.com/" >@BlueVine</a>
                 </Typography>
                 <Typography
-                    inline
                     variant="body2"
                    component="p"
                    paragraph={true}
@@ -76,7 +76,6 @@ class MainPageComponent extends React.Component {
                 </Typography>
 
                 <Typography
-                    inline
                     variant="body2"
                    component="p"
                    paragraph={true}
@@ -98,16 +97,16 @@ class MainPageComponent extends React.Component {
                     direction="row"
                     justify="space-between"
                     alignItems="center">
-                    <IconButton style={{color: "#1b5e20"}} target="_blank" rel="noopener noreferrer" href="https://github.com/Ori-Roza">
+                    <IconButton style={{color: BASE_COLOR}} target="_blank" rel="noopener noreferrer" href="https://github.com/Ori-Roza">
                         <GitHubIcon/>
                     </IconButton>
-                    <IconButton style={{color: "#1b5e20"}} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ori-roza-37168413b/">
+                    <IconButton style={{color: BASE_COLOR}} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ori-roza-37168413b/">
                         <LinkedInIcon/>
                     </IconButton>
-                    <IconButton style={{color: "#1b5e20"}} href="mailto:ori75660@gmail.com">
+                    <IconButton style={{color: BASE_COLOR}} href="mailto:ori75660@gmail.com">
                         <EmailIcon/>
                     </IconButton>
-                    <IconButton style={{color: "#1b5e20"}} target="_blank" rel="noopener noreferrer" href="https://medium.com/@ori75660">
+                    <IconButton style={{color: BASE_COLOR}} target="_blank" rel="noopener noreferrer" href="https://medium.com/@ori75660">
                     <Icon>
                         <img alt="" src={MediumSVG} height={25} width={25}/>
                     </Icon>
