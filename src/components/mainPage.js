@@ -17,7 +17,6 @@ const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     backgroundColor: 'transparent',
-    textAlign: 'center',
     color: "#1b5e20",
     boxShadow: 'none',
     border: 0
@@ -32,7 +31,7 @@ class MainPageComponent extends React.Component {
             alignItems="center"
             spacing={0.75}
             >
-                <Item style={{width: "100%", paddingTop: "2%"}}>
+                <Item style={{width: "100%", paddingTop: "2%", textAlign: 'center'}}>
                     <Box
                         component="img"
                         sx={{
@@ -46,22 +45,48 @@ class MainPageComponent extends React.Component {
                 <Item>
                     <h1>Hi! I'm <b>Ori Roza</b> → DaPythonista!</h1><br></br>
                 </Item>
-                <Item sx={{ maxWidth: 450 }}>
-                <Typography>
-                    <Box sx={{ textAlign: 'center', m: 1 }}>I'm a software engineer from Tel Aviv, currently <a target="_blank" rel="noopener noreferrer" href="https://www.bluevine.com/" >@BlueVine</a></Box>
+                <Item sx={{ maxWidth: 600 }}>
+                <Typography
+                    inline
+                    variant="body2"
+                   component="p"
+                   paragraph={true}
+                   sx={{
+                    whiteSpace: 'pre-line',
+                    
+                 }}
+                 style={{ paddingLeft: '16%' }}
+                >
+                    I'm a software engineer from Tel Aviv, currently <a target="_blank" rel="noopener noreferrer" href="https://www.bluevine.com/" >@BlueVine</a>
                 </Typography>
                 <Typography
+                    inline
+                    variant="body2"
                    component="p"
                    paragraph={true}
                    sx={{
                     whiteSpace: 'pre-line',
                  }}
-                >
-                <Box sx={{ textAlign: 'center' }}>I've been expriencing with security-research, web development, ML, and architecture using Python, JS (React and vanilla), C, C++, JAVA in multiple systems such as Windows, Linux, Android and IOS.</Box>
-                <br></br>
-                <Box sx={{ textAlign: 'center' }}>Flask • FastAPI • Django • SQLAlchemy • Pandas • Scipy • Sklearn • Pytorch</Box>
+                 style={{ paddingLeft: '16%' }}
 
+                >
+                I've been expriencing with security-research, web development, ML, and architecture using Python, JS (React and vanilla), C, C++, JAVA in multiple systems such as Windows, Linux, Android and IOS.
                 </Typography>
+
+                <Typography
+                    inline
+                    variant="body2"
+                   component="p"
+                   paragraph={true}
+                   sx={{
+                    whiteSpace: 'pre-line',
+                 }}
+                 style={{ paddingLeft: '16%' }}
+
+                >
+                    Flask • FastAPI • Django • SQLAlchemy • Pandas • Scipy • Sklearn • Pytorch
+                </Typography>
+
                 </Item>
                 <Item>
                 <Grid
