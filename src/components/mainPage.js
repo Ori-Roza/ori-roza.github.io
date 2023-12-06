@@ -74,7 +74,7 @@ class MainPageComponent extends React.Component {
                 >
                 I've been experiencing with security-research, web development, ML, and architecture using Python, JS (React and vanilla), C, C++, JAVA in multiple systems such as Windows, Linux, Android and IOS.
                 </Typography>
-                    <Typography
+                <Typography
                         variant="body2"
                        component="p"
                        paragraph={true}
